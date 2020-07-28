@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Blog Home - Start Bootstrap Template</title>
+  </head>
+
+  <body>
+    <!-- Page Content -->
+    <div class="container" style="margin-top: 50px;">
+      <div class="row">
+        <!-- Blog Entries Column -->
+        <div class="col-md-8">
+          <h1 class="my-4">
+            Blog
+            <small>Articles</small>
+          </h1>
+
+          <!-- Blog Post -->
+          <div class="card mb-4" *ngFor="let article of articles">
+            <img
+              class="rg_i Q4LuWd tx8vtf"
+              data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQRsWt4qwj6bDKCEYgynFDvE7lSOYlfKT5UPdtacndbcNDgHw6I"
+              data-lt=""
+              jsname="Q4LuWd"
+              alt="Image result for event thumbnail"
+              src="../../assets/eventimg.png"
+              height="225px"
+            />
+            <div class="card-body">
+              <h2 class="card-title">{{ article.Title }}</h2>
+              <p class="card-text">
+                {{ (article.Content | slice: 0:25) + "..." }}
+              </p>
+              <button
+                href="#"
+                class="btn btn-primary"
+                (click)="goToDetails(article)"
+              >
+                Read More &rarr;
+              </button>
+            </div>
+            <div class="card-footer text-muted">
+              Posted on {{ article.created_at | date: "fullDate" }}
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+          <!-- Search Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Search</h5>
+            <div class="card-body">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search for..."
+                />
+                <span class="input-group-append">
+                  <button class="btn btn-secondary" type="button">Go!</button>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Categories Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Categories</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0">
+                    <li *ngFor="let cat of categories">
+                      <a href="#">{{ cat.Cat_Name }}</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card my-4">
+            <h5 class="card-header">Tags</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0">
+                    <li *ngFor="let tag of tags">
+                      <a href="#">{{ tag.Tag_Name }}</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- /.row -->
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">
+          Copyright &copy; Your Website 2020
+        </p>
+      </div>
+      <!-- /.container -->
+    </footer>
+  </body>
+</html>

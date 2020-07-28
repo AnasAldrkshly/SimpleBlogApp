@@ -1,0 +1,33 @@
+<nb-card>
+  <nb-card-header>
+    Categories
+  </nb-card-header>
+
+  <nb-card-body>
+    <ng2-smart-table
+      [settings]="cat_settings"
+      [source]="cats_data"
+      (editConfirm)="onEditCatConfirm($event)"
+      (deleteConfirm)="onDeleteCatConfirm($event)"
+      (createConfirm)="onCreateCatConfirm($event)"
+    >
+    </ng2-smart-table>
+  </nb-card-body>
+</nb-card>
+
+<nb-card>
+  <nb-card-header>
+    Tags
+  </nb-card-header>
+
+  <nb-card-body>
+    <ng2-smart-table
+      [settings]="tag_settings"
+      [source]="tags_data"
+      (editConfirm)="onEditTagConfirm($event)"
+      (deleteConfirm)="onDeleteTagConfirm($event)"
+      (createConfirm)="onCreateTagConfirm($event)"
+    >
+    </ng2-smart-table>
+  </nb-card-body>
+</nb-card>

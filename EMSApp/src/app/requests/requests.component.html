@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Blog Post - Start Bootstrap Template</title>
+  </head>
+
+  <body>
+    <!-- Page Content -->
+    <div class="container" style="margin-top: 50px;">
+      <div class="row">
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+          <!-- Title -->
+          <h1 class="mt-4">{{ title }}</h1>
+
+          <!-- Author -->
+          <p class="lead">
+            by
+            <a href="#">Start Bootstrap</a>
+          </p>
+
+          <hr />
+
+          <!-- Date/Time -->
+          <p>Posted on {{ created_at | date: "fullDate" }}</p>
+
+          <hr />
+
+          <!-- Preview Image -->
+          <img
+            class="rg_i Q4LuWd tx8vtf img-fluid rounded"
+            data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQRsWt4qwj6bDKCEYgynFDvE7lSOYlfKT5UPdtacndbcNDgHw6I"
+            data-lt=""
+            jsname="Q4LuWd"
+            alt="Image result for event thumbnail"
+            src="../../assets/eventimg.png"
+            height="225px"
+          />
+
+          <hr />
+
+          <!-- Post Content -->
+          <p class="lead">{{ content }}</p>
+
+          <hr />
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+          <!-- Search Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Search</h5>
+            <div class="card-body">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search for..."
+                />
+                <span class="input-group-append">
+                  <button class="btn btn-secondary" type="button">Go!</button>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Categories Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Article Category</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#">{{ Art_Cat }}</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card my-4">
+            <h5 class="card-header">Tags</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0">
+                    <li *ngFor="let tag of tags">
+                      <div *ngIf="tag.article_id == artid">
+                        <a href="#">{{ this.this_tag }}</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">
+          Copyright &copy; Your Website 2020
+        </p>
+      </div>
+      <!-- /.container -->
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<div class="row">
+  <div class="col-lg-9 adapt">
+    <nb-card>
+      <nb-card-header>New Article</nb-card-header>
+      <nb-card-body>
+        <input
+          type="text"
+          nbInput
+          fullWidth
+          placeholder="Article Title"
+          [(ngModel)]="title"
+        />
+        <div class="full-name-inputs">
+          <p>Categories</p>
+          <nb-select selected="1" [(ngModel)]="cat_id" style="width: 200px;">
+            <nb-option *ngFor="let cat of cats_data" value="{{ cat.id }}">{{
+              cat.Cat_Name
+            }}</nb-option>
+          </nb-select>
+
+          <p>Tags</p>
+          <nb-select selected="1" [(ngModel)]="tag_id" style="width: 200px;">
+            <nb-option *ngFor="let tag of tags_data" value="{{ tag.id }}">{{
+              tag.Tag_Name
+            }}</nb-option>
+          </nb-select>
+        </div>
+
+        <textarea
+          rows="5"
+          nbInput
+          fullWidth
+          shape="round"
+          placeholder="Article Body"
+          [(ngModel)]="content"
+        ></textarea>
+        <div class="row" style="margin-left: 20%;">
+          <input
+            style="width: 50%;"
+            id="photo"
+            name="studentPhoto"
+            type="file"
+            (change)="setPhoto($event)"
+            class="form-control"
+          />
+        </div>
+        <button class="btn btn-success" (click)="submitArticle()" type="submit">
+          Submit
+        </button>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>

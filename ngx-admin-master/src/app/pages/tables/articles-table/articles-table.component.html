@@ -1,0 +1,16 @@
+<nb-card>
+  <nb-card-header>
+    Articles
+  </nb-card-header>
+
+  <nb-card-body>
+    <ng2-smart-table
+      [settings]="art_settings"
+      [source]="arts_data"
+      (editConfirm)="onEditArtConfirm($event)"
+      (deleteConfirm)="onDeleteArtConfirm($event)"
+      (createConfirm)="onCreateArtConfirm($event)"
+    >
+    </ng2-smart-table>
+  </nb-card-body>
+</nb-card>

@@ -1,0 +1,66 @@
+<div class="container col-md-12">
+  <br /><br />
+  <h3 class="display-4" style="text-align: center;">
+    Blog Application Statistics
+  </h3>
+  <p class="lead" style="text-align: center;">
+    You can find below some statistics regarding articles, editors and
+    categories.
+  </p>
+  <hr />
+  <br /><br />
+  <div class="row col-md-12">
+    <!-- Chart Component -->
+    <div class="col-md-1"></div>
+    <div class="col-md-3">
+      <fusioncharts
+        type="pie2d"
+        width="600"
+        height="400"
+        [dataSource]="Obj2"
+        (dataplotClick)="dataplotClick($event)"
+        (initialized)="initialized($event)"
+      >
+      </fusioncharts>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-3"></div>
+    <div class="col-md-1"></div>
+    <div class="col-md-2" style="margin-top: 50px;">
+      <img src="./../..//assets/std.jpg" height="300px" width="300px" />
+    </div>
+  </div>
+
+  <hr />
+
+  <hr />
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-2" style="margin-top: 50px;">
+      <img src="./../..//assets/eve2.jpg" height="400px" width="500px" />
+    </div>
+
+    <div class="col-md-3"></div>
+    <div class="col-md-4">
+      <fusioncharts [chartConfig]="chartConfig" [dataSource]="EvObj2">
+      </fusioncharts>
+    </div>
+  </div>
+
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-9 col-md">
+        <img
+          class="mb-2"
+          src="/docs/4.4/assets/brand/bootstrap-solid.svg"
+          alt=""
+          width="24"
+          height="24"
+        />
+        <small class="d-block mb-3 text-muted" style="text-align: center;"
+          >© 2020-2021</small
+        >
+      </div>
+    </div>
+  </footer>
+</div>

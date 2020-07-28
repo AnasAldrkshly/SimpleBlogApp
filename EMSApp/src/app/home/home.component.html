@@ -1,0 +1,23 @@
+<div class="container mt-5">
+  <div *ngIf="!registerMode" style="text-align: center;">
+    <h1>Welcome to Simple Blog Application</h1>
+    <p class="lead">
+      Please go to Admin panel if you are an admin, or you can checkall articles
+      here
+    </p>
+    <div class="text-center">
+      <button class="btn btn-primary btn-lg mr-2" (click)="goToDash()">
+        Admin panel
+      </button>
+      <button class="btn btn-info btn-lg" (click)="goToForm()">
+        All Articles
+      </button>
+    </div>
+  </div>
+  <div>
+    <img
+      src="./../../assets/EMS2.jpg"
+      style="margin-left: -10%; height: 715px;"
+    />
+  </div>
+</div>

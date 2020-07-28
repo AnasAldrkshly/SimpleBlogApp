@@ -1,0 +1,32 @@
+
+<nb-card>
+  <nb-card-header>
+   Roles
+  </nb-card-header>
+
+  <nb-card-body>
+    <ng2-smart-table [settings]="role_settings" [source]="roles_data"     
+    (editConfirm)="onEditRoleConfirm($event)" 
+    (deleteConfirm)="onDeleteRoleConfirm($event)"
+    (createConfirm)="onCreateRoleConfirm($event)"
+   >
+    </ng2-smart-table>
+  </nb-card-body>
+</nb-card>
+
+<nb-card>
+  <nb-card-header>
+    Users
+  </nb-card-header>
+
+  <nb-card-body>
+    <ng2-smart-table [settings]="user_settings" [source]="users_data"     
+    (editConfirm)="onEditUserConfirm($event)" 
+    (deleteConfirm)="onDeleteUserConfirm($event)"
+    (createConfirm)="onCreateUserConfirm($event)"
+   >
+    </ng2-smart-table>
+  </nb-card-body>
+</nb-card>
+
+

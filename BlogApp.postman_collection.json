@@ -1,0 +1,1221 @@
+{
+	"info": {
+		"_postman_id": "abb5391b-dcc1-42b4-8102-eeff9e1e6d53",
+		"name": "BlogApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "eyJpdiI6ImNFd2tUOUNWVTdIcmYzWlBRaUZhNnc9PSIsInZhbHVlIjoieS9ONFBzZjE1THBxZmZtVmk1QXNpMnhsZ0NsblR0VXRtMUVZRHVVUFdrSU4xZ0k2WHZMNWtFL2JOSUQxcHFMUSIsIm1hYyI6IjAxNjUyNWNiY2RlOWQzZTljY2ZlMGFjNTg2NDE3MWMwMWNmNjExZmJjOWU5YTliNWM0NjNiOGYzYjZlZGQ1NzQifQ%3D%3D",
+						"disabled": true
+					},
+					{
+						"key": "X-CSRF-TOKEN",
+						"type": "text",
+						"value": "tokenvaluetobeinserted235kwgeiOIulgsk",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "Ahmad",
+							"type": "text"
+						},
+						{
+							"key": "role_id",
+							"value": "2"
+						},
+						{
+							"key": "email",
+							"value": "ahmad@larav.comis short text",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users"
+					]
+				},
+				"description": "Save User"
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "eyJpdiI6ImNFd2tUOUNWVTdIcmYzWlBRaUZhNnc9PSIsInZhbHVlIjoieS9ONFBzZjE1THBxZmZtVmk1QXNpMnhsZ0NsblR0VXRtMUVZRHVVUFdrSU4xZ0k2WHZMNWtFL2JOSUQxcHFMUSIsIm1hYyI6IjAxNjUyNWNiY2RlOWQzZTljY2ZlMGFjNTg2NDE3MWMwMWNmNjExZmJjOWU5YTliNWM0NjNiOGYzYjZlZGQ1NzQifQ%3D%3D",
+						"disabled": true
+					},
+					{
+						"key": "X-CSRF-TOKEN",
+						"type": "text",
+						"value": "tokenvaluetobeinserted235kwgeiOIulgsk",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "ahmad22",
+							"type": "text"
+						},
+						{
+							"key": "role_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ahmad@larav.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/users/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				},
+				"description": "Update User"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "eyJpdiI6ImNFd2tUOUNWVTdIcmYzWlBRaUZhNnc9PSIsInZhbHVlIjoieS9ONFBzZjE1THBxZmZtVmk1QXNpMnhsZ0NsblR0VXRtMUVZRHVVUFdrSU4xZ0k2WHZMNWtFL2JOSUQxcHFMUSIsIm1hYyI6IjAxNjUyNWNiY2RlOWQzZTljY2ZlMGFjNTg2NDE3MWMwMWNmNjExZmJjOWU5YTliNWM0NjNiOGYzYjZlZGQ1NzQifQ%3D%3D",
+						"disabled": true
+					},
+					{
+						"key": "X-CSRF-TOKEN",
+						"type": "text",
+						"value": "tokenvaluetobeinserted235kwgeiOIulgsk",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/users/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Article",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "eyJpdiI6ImNFd2tUOUNWVTdIcmYzWlBRaUZhNnc9PSIsInZhbHVlIjoieS9ONFBzZjE1THBxZmZtVmk1QXNpMnhsZ0NsblR0VXRtMUVZRHVVUFdrSU4xZ0k2WHZMNWtFL2JOSUQxcHFMUSIsIm1hYyI6IjAxNjUyNWNiY2RlOWQzZTljY2ZlMGFjNTg2NDE3MWMwMWNmNjExZmJjOWU5YTliNWM0NjNiOGYzYjZlZGQ1NzQifQ%3D%3D",
+						"disabled": true
+					},
+					{
+						"key": "X-CSRF-TOKEN",
+						"type": "text",
+						"value": "tokenvaluetobeinserted235kwgeiOIulgsk",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Title2",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "This is short text",
+							"type": "text"
+						},
+						{
+							"key": "cat_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "tag_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "created_user_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/articles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Article",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "eyJpdiI6ImNFd2tUOUNWVTdIcmYzWlBRaUZhNnc9PSIsInZhbHVlIjoieS9ONFBzZjE1THBxZmZtVmk1QXNpMnhsZ0NsblR0VXRtMUVZRHVVUFdrSU4xZ0k2WHZMNWtFL2JOSUQxcHFMUSIsIm1hYyI6IjAxNjUyNWNiY2RlOWQzZTljY2ZlMGFjNTg2NDE3MWMwMWNmNjExZmJjOWU5YTliNWM0NjNiOGYzYjZlZGQ1NzQifQ%3D%3D",
+						"disabled": true
+					},
+					{
+						"key": "X-CSRF-TOKEN",
+						"type": "text",
+						"value": "tokenvaluetobeinserted235kwgeiOIulgsk",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Title1",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "This is short text666666666",
+							"type": "text"
+						},
+						{
+							"key": "cat_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "tag_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "created_user_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/articles/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"articles",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Article",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "eyJpdiI6ImNFd2tUOUNWVTdIcmYzWlBRaUZhNnc9PSIsInZhbHVlIjoieS9ONFBzZjE1THBxZmZtVmk1QXNpMnhsZ0NsblR0VXRtMUVZRHVVUFdrSU4xZ0k2WHZMNWtFL2JOSUQxcHFMUSIsIm1hYyI6IjAxNjUyNWNiY2RlOWQzZTljY2ZlMGFjNTg2NDE3MWMwMWNmNjExZmJjOWU5YTliNWM0NjNiOGYzYjZlZGQ1NzQifQ%3D%3D",
+						"disabled": true
+					},
+					{
+						"key": "X-CSRF-TOKEN",
+						"type": "text",
+						"value": "tokenvaluetobeinserted235kwgeiOIulgsk",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/articles/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"articles",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Tag",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "eyJpdiI6ImNFd2tUOUNWVTdIcmYzWlBRaUZhNnc9PSIsInZhbHVlIjoieS9ONFBzZjE1THBxZmZtVmk1QXNpMnhsZ0NsblR0VXRtMUVZRHVVUFdrSU4xZ0k2WHZMNWtFL2JOSUQxcHFMUSIsIm1hYyI6IjAxNjUyNWNiY2RlOWQzZTljY2ZlMGFjNTg2NDE3MWMwMWNmNjExZmJjOWU5YTliNWM0NjNiOGYzYjZlZGQ1NzQifQ%3D%3D",
+						"disabled": true
+					},
+					{
+						"key": "X-CSRF-TOKEN",
+						"type": "text",
+						"value": "tokenvaluetobeinserted235kwgeiOIulgsk",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "tag_name",
+							"value": "#tsetTag",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/tags",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tags"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Tag",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "eyJpdiI6ImNFd2tUOUNWVTdIcmYzWlBRaUZhNnc9PSIsInZhbHVlIjoieS9ONFBzZjE1THBxZmZtVmk1QXNpMnhsZ0NsblR0VXRtMUVZRHVVUFdrSU4xZ0k2WHZMNWtFL2JOSUQxcHFMUSIsIm1hYyI6IjAxNjUyNWNiY2RlOWQzZTljY2ZlMGFjNTg2NDE3MWMwMWNmNjExZmJjOWU5YTliNWM0NjNiOGYzYjZlZGQ1NzQifQ%3D%3D",
+						"disabled": true
+					},
+					{
+						"key": "X-CSRF-TOKEN",
+						"type": "text",
+						"value": "tokenvaluetobeinserted235kwgeiOIulgsk",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "tag_name",
+							"value": "#OnlineLearning1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/tags/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tags",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Tag",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "eyJpdiI6ImNFd2tUOUNWVTdIcmYzWlBRaUZhNnc9PSIsInZhbHVlIjoieS9ONFBzZjE1THBxZmZtVmk1QXNpMnhsZ0NsblR0VXRtMUVZRHVVUFdrSU4xZ0k2WHZMNWtFL2JOSUQxcHFMUSIsIm1hYyI6IjAxNjUyNWNiY2RlOWQzZTljY2ZlMGFjNTg2NDE3MWMwMWNmNjExZmJjOWU5YTliNWM0NjNiOGYzYjZlZGQ1NzQifQ%3D%3D",
+						"disabled": true
+					},
+					{
+						"key": "X-CSRF-TOKEN",
+						"type": "text",
+						"value": "tokenvaluetobeinserted235kwgeiOIulgsk",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/tags/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tags",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Category",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "eyJpdiI6ImNFd2tUOUNWVTdIcmYzWlBRaUZhNnc9PSIsInZhbHVlIjoieS9ONFBzZjE1THBxZmZtVmk1QXNpMnhsZ0NsblR0VXRtMUVZRHVVUFdrSU4xZ0k2WHZMNWtFL2JOSUQxcHFMUSIsIm1hYyI6IjAxNjUyNWNiY2RlOWQzZTljY2ZlMGFjNTg2NDE3MWMwMWNmNjExZmJjOWU5YTliNWM0NjNiOGYzYjZlZGQ1NzQifQ%3D%3D",
+						"disabled": true
+					},
+					{
+						"key": "X-CSRF-TOKEN",
+						"type": "text",
+						"value": "tokenvaluetobeinserted235kwgeiOIulgsk",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "cat_name",
+							"value": "Literatur",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Category",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "eyJpdiI6ImNFd2tUOUNWVTdIcmYzWlBRaUZhNnc9PSIsInZhbHVlIjoieS9ONFBzZjE1THBxZmZtVmk1QXNpMnhsZ0NsblR0VXRtMUVZRHVVUFdrSU4xZ0k2WHZMNWtFL2JOSUQxcHFMUSIsIm1hYyI6IjAxNjUyNWNiY2RlOWQzZTljY2ZlMGFjNTg2NDE3MWMwMWNmNjExZmJjOWU5YTliNWM0NjNiOGYzYjZlZGQ1NzQifQ%3D%3D",
+						"disabled": true
+					},
+					{
+						"key": "X-CSRF-TOKEN",
+						"type": "text",
+						"value": "tokenvaluetobeinserted235kwgeiOIulgsk",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "cat_name",
+							"value": "Literatur",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/categories/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categories",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Category",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "eyJpdiI6ImNFd2tUOUNWVTdIcmYzWlBRaUZhNnc9PSIsInZhbHVlIjoieS9ONFBzZjE1THBxZmZtVmk1QXNpMnhsZ0NsblR0VXRtMUVZRHVVUFdrSU4xZ0k2WHZMNWtFL2JOSUQxcHFMUSIsIm1hYyI6IjAxNjUyNWNiY2RlOWQzZTljY2ZlMGFjNTg2NDE3MWMwMWNmNjExZmJjOWU5YTliNWM0NjNiOGYzYjZlZGQ1NzQifQ%3D%3D",
+						"disabled": true
+					},
+					{
+						"key": "X-CSRF-TOKEN",
+						"type": "text",
+						"value": "tokenvaluetobeinserted235kwgeiOIulgsk",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/categories/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categories",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Role",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "eyJpdiI6ImNFd2tUOUNWVTdIcmYzWlBRaUZhNnc9PSIsInZhbHVlIjoieS9ONFBzZjE1THBxZmZtVmk1QXNpMnhsZ0NsblR0VXRtMUVZRHVVUFdrSU4xZ0k2WHZMNWtFL2JOSUQxcHFMUSIsIm1hYyI6IjAxNjUyNWNiY2RlOWQzZTljY2ZlMGFjNTg2NDE3MWMwMWNmNjExZmJjOWU5YTliNWM0NjNiOGYzYjZlZGQ1NzQifQ%3D%3D",
+						"disabled": true
+					},
+					{
+						"key": "X-CSRF-TOKEN",
+						"type": "text",
+						"value": "tokenvaluetobeinserted235kwgeiOIulgsk",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "role_name",
+							"value": "User2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/roles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"roles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Role",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "eyJpdiI6ImNFd2tUOUNWVTdIcmYzWlBRaUZhNnc9PSIsInZhbHVlIjoieS9ONFBzZjE1THBxZmZtVmk1QXNpMnhsZ0NsblR0VXRtMUVZRHVVUFdrSU4xZ0k2WHZMNWtFL2JOSUQxcHFMUSIsIm1hYyI6IjAxNjUyNWNiY2RlOWQzZTljY2ZlMGFjNTg2NDE3MWMwMWNmNjExZmJjOWU5YTliNWM0NjNiOGYzYjZlZGQ1NzQifQ%3D%3D",
+						"disabled": true
+					},
+					{
+						"key": "X-CSRF-TOKEN",
+						"type": "text",
+						"value": "tokenvaluetobeinserted235kwgeiOIulgsk",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "role_name",
+							"value": "User1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/roles/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"roles",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Role",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "eyJpdiI6ImNFd2tUOUNWVTdIcmYzWlBRaUZhNnc9PSIsInZhbHVlIjoieS9ONFBzZjE1THBxZmZtVmk1QXNpMnhsZ0NsblR0VXRtMUVZRHVVUFdrSU4xZ0k2WHZMNWtFL2JOSUQxcHFMUSIsIm1hYyI6IjAxNjUyNWNiY2RlOWQzZTljY2ZlMGFjNTg2NDE3MWMwMWNmNjExZmJjOWU5YTliNWM0NjNiOGYzYjZlZGQ1NzQifQ%3D%3D",
+						"disabled": true
+					},
+					{
+						"key": "X-CSRF-TOKEN",
+						"type": "text",
+						"value": "tokenvaluetobeinserted235kwgeiOIulgsk",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/roles/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"roles",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Article Tag",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "eyJpdiI6ImNFd2tUOUNWVTdIcmYzWlBRaUZhNnc9PSIsInZhbHVlIjoieS9ONFBzZjE1THBxZmZtVmk1QXNpMnhsZ0NsblR0VXRtMUVZRHVVUFdrSU4xZ0k2WHZMNWtFL2JOSUQxcHFMUSIsIm1hYyI6IjAxNjUyNWNiY2RlOWQzZTljY2ZlMGFjNTg2NDE3MWMwMWNmNjExZmJjOWU5YTliNWM0NjNiOGYzYjZlZGQ1NzQifQ%3D%3D",
+						"disabled": true
+					},
+					{
+						"key": "X-CSRF-TOKEN",
+						"type": "text",
+						"value": "tokenvaluetobeinserted235kwgeiOIulgsk",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "article_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "tag_id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/article_tag",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"article_tag"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Article Tag",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "eyJpdiI6ImNFd2tUOUNWVTdIcmYzWlBRaUZhNnc9PSIsInZhbHVlIjoieS9ONFBzZjE1THBxZmZtVmk1QXNpMnhsZ0NsblR0VXRtMUVZRHVVUFdrSU4xZ0k2WHZMNWtFL2JOSUQxcHFMUSIsIm1hYyI6IjAxNjUyNWNiY2RlOWQzZTljY2ZlMGFjNTg2NDE3MWMwMWNmNjExZmJjOWU5YTliNWM0NjNiOGYzYjZlZGQ1NzQifQ%3D%3D",
+						"disabled": true
+					},
+					{
+						"key": "X-CSRF-TOKEN",
+						"type": "text",
+						"value": "tokenvaluetobeinserted235kwgeiOIulgsk",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "article_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "tag_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/article_tag/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"article_tag",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Article Tag",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "eyJpdiI6ImNFd2tUOUNWVTdIcmYzWlBRaUZhNnc9PSIsInZhbHVlIjoieS9ONFBzZjE1THBxZmZtVmk1QXNpMnhsZ0NsblR0VXRtMUVZRHVVUFdrSU4xZ0k2WHZMNWtFL2JOSUQxcHFMUSIsIm1hYyI6IjAxNjUyNWNiY2RlOWQzZTljY2ZlMGFjNTg2NDE3MWMwMWNmNjExZmJjOWU5YTliNWM0NjNiOGYzYjZlZGQ1NzQifQ%3D%3D",
+						"disabled": true
+					},
+					{
+						"key": "X-CSRF-TOKEN",
+						"type": "text",
+						"value": "tokenvaluetobeinserted235kwgeiOIulgsk",
+						"disabled": true
+					},
+					{
+						"key": "XSRF-TOKEN",
+						"type": "text",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/article_tag/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"article_tag",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
